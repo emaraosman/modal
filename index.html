@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+  <title>Remunerati Technical Interview</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,600" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./styles/reset.css">
+  <link rel="stylesheet" type="text/css" href="./styles/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+
+  <button id="open-modal-button" >Click Here Leanne and Mike!</button>
+  <div id="response-box">Saved Data: <p id="saved-data-response"></p></div>
+
+  <div id="edit-modal" class="modal">
+    <div class="modal-container">
+
+      <button class="close-modal">X</button>
+
+      <h2 class="modal-title"><i class="far fa-edit" style="opacity:0.5;"></i> Now editing:</h2>
+
+      <div class="modal-header">
+        <div class="category">
+          Health Subcategory:<p id="health-subcategory" style="font-weight:600;"></p>
+        </div>
+
+        <div class="date-picker">
+          Effective Date of Change:
+          <div id="date-picker" style="font-weight:600;"></div>
+        </div>
+      </div>
+
+      <div class="modal-row coverage-section">
+        <div class="health-coverage mil fleft">
+          <h3 class="mil fleft" >Health Plan:</h3>
+          <select id="health-plan-picker" class="mil fright">
+
+          </select>
+        </div>
+
+          <div class="coverage-level mil fright">
+            <h3 class="mil fleft">Coverage Level:</h3>
+            <select id="coverage-level-picker" class="mil fright"></select>
+          </div>
+      </div>
+
+      <div class="modal-row cf">
+        <div class="ee-contribution mil fleft">
+          EE Contribution: <span style="margin-left:5px;"> </span> $<input id="ee-contribution" class="ee-input" type="text" name="ee-contribution"><i class="far fa-clone" style="opacity:0.5;"></i> <input id="ee-percentage" class="ee-input" type="text" name="ee-percentage">%
+        </div>
+        <div class="er-contribution mil fright">
+          ER Contribution: <span style="margin-left:5px;"> </span> $<input id="er-contribution" class="ee-input" type="text" name="er-contribution"><i class="far fa-clone" style="opacity:0.5;"></i> <input id="er-percentage" class="ee-input" type="text" name="er-percentage">%
+        </div>
+      </div>
+
+      <div class="modal-row cf">
+        Covered Dependents: <input id="dependents-boolean" type="checkbox" name="dependents-switch">Y/N? <input id="dependents-input" type="text" name="dependents-input" placeholder="Comma separate names(ex: John Doe, Susan Smith)">
+      </div>
+
+      <div class="modal-row cf">
+        Waive: <input id="waive-boolean" type="checkbox" name="dependents-switch">Y/N?  <span style="margin-left:40px;" />   Reason:  <select id="waive-reason-picker" class="mil"></select> <button id="waiver-button" type="button" name="waver-button">Waiver Documentation</button> <i class="fas fa-exclamation-triangle" style="margin-left:10px; color: rgb(145,120,170);"></i>
+      </div>
+
+      <div class="cf breaker-line">
+      </div>
+
+      <div class="modal-row cf confirmation-section">
+        <button id="cancel-button" type="button" name="cancel-button">Cancel</button> <button id="save-button" type="button" name="save-button">SAVE</button>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+  <script src="./src/main.js"></script>
+</body>
+</html>
